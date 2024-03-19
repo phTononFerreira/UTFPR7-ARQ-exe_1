@@ -2,7 +2,6 @@ import Aluno from './models/Aluno.js';
 import Turma from './models/Turma.js';
 import TurmaPresencial from './models/TurmaPresencial.js';
 
-// Exemplo de utilização das classes
 const turma1 = new Turma("T1", 8);
 const turmaPresencial1 = new TurmaPresencial("TP1", 7, 80);
 const aluno1 = new Aluno("João", "joao123", "123456", turma1);
