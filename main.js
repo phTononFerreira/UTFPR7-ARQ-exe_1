@@ -2,10 +2,20 @@ import Aluno from './models/Aluno.js';
 import Turma from './models/Turma.js';
 import TurmaPresencial from './models/TurmaPresencial.js';
 
-const turma1 = new Turma("T1", 8);
-const turmaPresencial1 = new TurmaPresencial("TP1", 7, 80);
-const aluno1 = new Aluno("João", "joao123", "123456", turma1);
-const aluno2 = new Aluno("Maria", "maria456", "789012", turmaPresencial1);
+const aluno1 = new Aluno('João', 'joao123', '123456', 'A');
+const aluno2 = new Aluno('Maria', 'maria456', '654321', 'B');
+const aluno3 = new Aluno('Pedro', 'pedro789', '987654', 'A');
 
-console.log(aluno1.nome, "está aprovado na turma:", aluno1.turma.aprovado());
-console.log(aluno2.nome, "está aprovado na turma presencial:", aluno2.turma.aprovado());
+const turmaA = new Turma('A', 7);
+const turmaB = new Turma('B', 5);
+
+const turmaPresencialA = new TurmaPresencial('A', 8, 80);
+const turmaPresencialB = new TurmaPresencial('B', 6, 70);
+
+console.log(`${aluno1.nome} está aprovado na turma ${aluno1.turma}? ${turmaA.aprovado() ? 'Sim' : 'Não'}`);
+console.log(`${aluno2.nome} está aprovado na turma ${aluno2.turma}? ${turmaB.aprovado() ? 'Sim' : 'Não'}`);
+console.log(`${aluno3.nome} está aprovado na turma ${aluno3.turma}? ${turmaA.aprovado() ? 'Sim' : 'Não'}`);
+
+console.log(`${aluno1.nome} está aprovado na turma presencial ${aluno1.turma}? ${turmaPresencialA.aprovado() ? 'Sim' : 'Não'}`);
+console.log(`${aluno2.nome} está aprovado na turma presencial ${aluno2.turma}? ${turmaPresencialB.aprovado() ? 'Sim' : 'Não'}`);
+console.log(`${aluno3.nome} está aprovado na turma presencial ${aluno3.turma}? ${turmaPresencialA.aprovado() ? 'Sim' : 'Não'}`);

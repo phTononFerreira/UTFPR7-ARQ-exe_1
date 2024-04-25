@@ -9,6 +9,10 @@ class TurmaPresencial extends Turma {
     aprovado() {
         return super.aprovado() && this.frequencia >= 75;
     }
+
+    obterFrequencia() {
+        return this.frequencia;
+    }
 }
 
 export default TurmaPresencial;

@@ -7,6 +7,10 @@ class Turma {
     aprovado() {
         return this.nota >= 6;
     }
+
+    obterFrequencia() {
+        return null;
+    }
 }
 
 export default Turma;
