@@ -8,8 +8,3 @@
 
 3. Princípio da Substituição de Liskov:
     O LSP diz que objetos de um programa devem ser substituíveis por instâncias de seus subtipos sem afetar a funcionalidade do programa. Fiz com que a classe TurmaPresencial seja verdadeiramente um subtipo de Turma.
-
-
-## Diagrama UML
-
-![Image](https://cdn.discordapp.com/attachments/810357545436315671/1233148725468332153/ModeloLista2.drawio.png?ex=662c0abe&is=662ab93e&hm=e4b1221a21890abaf059568769bb1a55e891a9d4f9c674ab3f4ea6dd1aec6228&)
